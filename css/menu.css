@@ -1,0 +1,34 @@
+
+nav{
+	float:left;
+	display: flex;
+	justify-content: center;
+	background-color: green;
+	width:100%;
+	height:80px;
+
+}
+
+nav ul li{
+	list-style:none;
+	display: inline-block;
+	float:left;
+ }
+nav ul li a{
+	color: white;
+	font-size:30px;
+	text-decoration: none;
+	line-height:80px;
+	padding:0 20px;
+}
+nav a:hover{
+	color: #293d3d;
+	text-decoration: underline;
+	transition: all.6s ease;
+}
+.main-nav{
+	display:flex;
+	justify-content: space-between;
+	width:980px;
+	
+}
