@@ -7,6 +7,33 @@
 	width:100%;
 	height:100%;
 }
+#left-content{
+	width:30%;
+	height:100%;
+}
+#right-content{
+	width:70%;
+	height:100%;
+}
+#main_3{
+	float:left;
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:100%;
+}
+#main-content_1{
+	display: flex;
+	justify-content: space-between;
+	margin-top:30px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:white;
+	width:980px;
+	height:785px;
+	border-radius:5px;
+}
+
 #telephone-contacts{
 	float:left;
 	height:100px;
