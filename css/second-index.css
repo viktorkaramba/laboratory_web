@@ -1,3 +1,4 @@
+/*Table*/
 table{
 	border: 2px solid black;
 	background:white;
@@ -7,6 +8,7 @@ table{
 	border-radius: 5px;
 	margin-bottom:0px;
 }
+/*Main block*/
 #main-2{
 	float:left;
 	display: flex;
@@ -49,6 +51,7 @@ td img{
 	margin-top:5px;
 	font-size: 20px;
 }
+/*block for table*/
 #divtable{
 	display:flex;
 	width:100%;
