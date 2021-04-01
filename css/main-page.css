@@ -17,7 +17,7 @@
 	border-radius:5px;
 }
 #news{
-	float:left;
+	
 	background-color:green;
 	width:350px;
 	height: 560px;
@@ -66,7 +66,7 @@
 
 }
 
-@media only screen and (min-width: 568px) and (max-width: 999px) {
+@media only screen and (min-width: 568px) and (max-width: 1000px) {
 	#main-content{
 	margin-top:20px;
 	background-color:white;
@@ -94,6 +94,8 @@
 	justify-content: space-between;
 	flex-direction: column-reverse;
 	margin-top:20px;
+	margin-left:0px;
+	margin-right:0px;
 	background-color:white;
 	width:100%;
 	border-radius:5px;
@@ -135,7 +137,7 @@
 	color:#293d3d;
 	font-size: 30px;
 	margin-bottom: 20px;
-	line-height:30px;
+	line-height:35px;
 	}
 	.newslistblock a{
 	position: relative;

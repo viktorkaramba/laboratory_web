@@ -2,7 +2,6 @@
 	display:flex;
 	flex-direction: column;
 	justify-content:space-between;
-	margin-bottom:20px;
 	background-color:#00cc00;
 	width:100%;
 	height:100%;
@@ -36,29 +35,97 @@
 
 #telephone-contacts{
 	float:left;
-	height:100px;
+	height:150px;
 	width:100%;
+	border-bottom:2px solid black;
+	border-radius: 5px;
 }
 #email-contact{
-	height:100px;
+	height:200px;
 	float:left;
 	width:100%;
+	border-bottom:2px solid black;
+	border-radius: 5px;
 }
 #location{
 	float:left;
-	height:200px;
+	height:300px;
 	width:100%;
+	
 }
 .contact-text{
+	margin-left:15px;
+	margin-top:5px;	
+	font-size: 20px;
+}
+.location-text{
+	position:relative;
+	left:0px;
+	bottom:35%;
+	float:left;
 	margin-left:15px;
 	margin-top:5px;
 	font-size: 20px;
 }
-h3{
+.h3{
+	margin-top:0px;
 	margin-left:15px;
 	font-size: 40px;
 }
 .main3{
 	border-radius:5px;
 	border: 3px solid black;
+}
+
+@media screen and (max-device-width: 568px){	
+	#main-content_1{
+	display: flex;
+	justify-content: space-between;
+	margin-top:30px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:white;
+	width:980px;
+	height:1000px;
+	border-radius:5px;
+	}
+	#telephone-contacts{
+		float:left;
+		height:200px;
+		width:100%;
+		border-bottom:2px solid black;
+		border-radius: 5px;
+	}
+	#email-contact{
+		height:200px;
+		float:left;
+		width:100%;
+		border-bottom:2px solid black;
+		border-radius: 5px;
+	}
+	#location{
+		float:left;
+		height:350px;
+		width:100%;
+		
+	}
+	.contact-text{
+		margin-left:15px;
+		margin-top:5px;	
+		font-size: 30px;
+	}
+	.location-text{
+		position:relative;
+		left:0px;
+		bottom:28%;
+		float:left;
+		margin-left:15px;
+		margin-top:5px;
+		font-size: 30px;
+	}
+	.h3{
+		margin-top:0px;
+		margin-left:15px;
+		font-size: 50px;
+	}
 }

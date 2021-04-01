@@ -1,25 +1,40 @@
 table{
-	border: 1px solid black;
+	border: 2px solid black;
 	background:white;
 	height:100%; 
 	width:100%;
 	border-top: 0px;
 	border-radius: 5px;
+	margin-bottom:0px;
+}
+#main-2{
+	float:left;
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:100%;
 }
 #main-content-2{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
 	margin-top:20px;
-	margin-bottom:20px;
 	margin-left:10px;
 	margin-right:10px;
 	background-color:none;
 	width:980px;
+	height:100%;
 }
 td{
 	text-align:center;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	border-right: 1px solid black;
-	height:65px;
+	height:100px;
 	font-size: 25px;
+}
+td img{
+	width:100px;
+	height:100%;
 }
 .head-text-2{
 	padding:15px;
@@ -31,19 +46,14 @@ td{
 	margin-top:5px;
 	font-size: 20px;
 }
-#content-2{
-	overflow-x:auto;
-	width:100%;
-	height: 100%;
-}	
 #divtable{
+	display:flex;
 	width:100%;
 	height:85%;
 }
 #head-text{
-
 	border-radius: 5px;
-	width:99.8%;
+	width:99.8%;	
 	height: 140x;
 	background-color:white;
 	border: 1px solid black;
@@ -52,6 +62,7 @@ td{
 	margin-top:20px;
 	display:flex;
 	flex-direction:row;
+	float:bottom;
 	justify-content: space-between;
 	width:100%;
 }
@@ -67,7 +78,7 @@ td{
 	background-color:#88ff4d;
 }
 #bags{
-		text-align: center;
+	text-align: center;
 	line-height:50px;
 	color:white;
 	width:200px;
@@ -91,7 +102,7 @@ td{
 		background-color:#88ff4d;
 }
 #nets{
-		text-align: center;
+	text-align: center;
 	line-height:50px;
 	color:white;
 	width:200px;
@@ -105,4 +116,17 @@ td{
 .textmenu{
 	font-size: 20px;
 	text-shadow: 1px 1px 2px;
+}
+@media screen and (max-device-width: 568px){	
+#main-content-2{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	margin-top:20px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:none;
+	width:980px;
+	height:100%;
+}
 }
