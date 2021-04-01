@@ -33,8 +33,11 @@ td{
 	font-size: 25px;
 }
 td img{
+	margin-top:5px;
 	width:100px;
 	height:100%;
+	border:2px solid black;
+	border-radius:5px;
 }
 .head-text-2{
 	padding:15px;
