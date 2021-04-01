@@ -22,7 +22,7 @@ nav ul li a{
 	padding:0 20px;
 }
 nav a:hover{
-	color: #293d3d;
+	color: #999999;
 	text-decoration: underline;
 	transition: all.6s ease;
 }

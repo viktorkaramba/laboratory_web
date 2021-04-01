@@ -292,11 +292,18 @@ p.title-text{
 	}
 	#footer_menu ul li{
 		margin-bottom:3px;
-		font-size:30px;
+		font-size:25px;
+	}
+	#footer_menu ul{
+		margin-right:50px;
+	
 	}
 	#footer-info{
 		margin-bottom:15px;
-		font-size:33px;
+		font-size:25px;
+	}
+	#footer-info ul{
+		margin-left:25px;
 	}
 	#footer_sourches_1{
 		display: none;
@@ -304,7 +311,7 @@ p.title-text{
 	}
 	.undertitle-text{
 		color: white;
-		font-size:30px;
-
+		font-size:25px;
+		margin-left:20px;
 	}
 }
