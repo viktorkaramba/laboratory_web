@@ -51,8 +51,12 @@ header{
 	justify-content:center;
 	width:100%;
 	height:400px;
+	background: url(../img/slider.jpg) no-repeat;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
-#slider>img{
+#slider img{
 	height:100%;
 	width:980px;
 	margin-left:10px;
@@ -67,7 +71,6 @@ p.title-text{
 	font-size: 35px;	
 	text-shadow: 2px 2px 3px black;
 	font-family: 'Fredoka One', cursive;
-	margin-bottom:10px;
 } 
 header>div#header_conteiner>div#logo>img{
 	float:left;
@@ -126,9 +129,9 @@ header>div#header_conteiner>div#logo>img{
 	height:100px;
 	
 }
-#slider{
+#slider img{
 	display:none;
-visibility: hidden;
+	visibility: hidden;
 }
 #header_conteiner{
 	width:100%;
