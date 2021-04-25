@@ -11,3 +11,16 @@ nav ul li a{
 	text-decoration: none;
 	
 }
+nav ul li {
+	line-height:15px;
+	border-right:2px solid white;
+	padding-right:30px;
+}
+
+.list-menu{
+	vertical-align:center;
+	background-color:green; 
+
+
+}
+
