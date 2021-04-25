@@ -46,7 +46,26 @@ aside a{
 	top:0%;
 }
 
-@media (max-width: 600px){
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+		
+	section{
+		min-height:1000px;
+	}
+
+}
+
+@media only screen and (min-width: 458px) and (max-width: 600px) {
+		
+	section{
+		min-height:1200px;
+	}
+
+}
+
+
+@media only screen and (min-width: 280px) and (max-width:458px) {
+		
 	.aside {
 		min-height: 200px;
 		background-color:green;	
@@ -55,16 +74,23 @@ aside a{
 	
 	section{
 	
-	min-height:1100px;
+	min-height:1800px;
 	
 	}
-	
- }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+@media only screen and (min-width: 0px) and (max-width:280px) {
 		
+	.aside {
+		min-height: 200px;
+		background-color:green;	
+		color:white;
+	}
+	
 	section{
-		min-height:1000px;
+	
+	min-height:2300px;
+	
 	}
 
 }

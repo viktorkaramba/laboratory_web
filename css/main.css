@@ -80,6 +80,7 @@ p.main-header-text{
 	text-shadow: 2px 2px 3px black;
 	font-family: 'Fredoka One', cursive;
 	margin-bottom:10px;
+	margin-top: 25px;
 }
 /*Style for text in header*/
 
@@ -98,6 +99,7 @@ p.telefone-text{
 	padding:0px;
 	font-size:30px;
 	font-family: 'Fredoka One', cursive;
+	padding-top:20px;
 }
 /*Style for footer*/
 footer{
@@ -119,6 +121,7 @@ footer{
 	.minheader{
 		text-align:center;
 	}
+	
  }
  
 @media (min-width: 568px){
@@ -130,6 +133,47 @@ footer{
 	}
  }
 
+@media (max-width: 438px){
+	header{
+		font-size: 14px;	
+		height:100px;
+		background-color: #80ffbf;
+		border-bottom: 3px solid #006600;
+		padding-top:45px;
+	}
+	p.main-header-text{
+		color: #ffffff;
+		font-size: 25px;	
+		text-shadow: 2px 2px 3px black;
+		font-family: 'Fredoka One', cursive;
+		margin-bottom:10px;
+		margin-top: 25px;
+	}
+	/*Style for text in header*/
+
+	p.header-text{
+		color: black;
+		font-size:14px;
+		font-family: 'Permanent Marker', cursive;
+		margin-top:0px;
+	}
+
+	/*Style for text of telephone*/
+
+	p.telefone-text{
+		
+		padding:0px;
+		font-size:20px;
+
+		margin-bottom:10px;
+	}
+	.img-header{
+		margin-top:15px;
+		width:70px;
+		height:70px;
+		
+	}
+}
 
 
 

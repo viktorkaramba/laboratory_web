@@ -43,3 +43,11 @@
 	
  }
  
+@media (max-width: 438px){
+	.section3{
+		width:100%;
+		min-height:1000px;
+	}
+	
+ }
+ 
