@@ -54,8 +54,7 @@ aside a{
 	}
 
 }
-
-@media only screen and (min-width: 458px) and (max-width: 600px) {
+@media only screen and (min-width: 500px) and (max-width: 600px) {
 		
 	section{
 		min-height:1200px;
@@ -63,14 +62,29 @@ aside a{
 
 }
 
-
-@media only screen and (min-width: 280px) and (max-width:458px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
 		
-	.aside {
-		min-height: 200px;
-		background-color:green;	
-		color:white;
+	section{
+		min-height:1300px;
 	}
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width:400px) {
+		
+	
+	
+	section{
+	
+	min-height:1650px;
+	
+	}
+
+}
+@media only screen and (min-width: 270px) and (max-width:300px) {
+		
+	
 	
 	section{
 	
@@ -79,17 +93,58 @@ aside a{
 	}
 
 }
-@media only screen and (min-width: 0px) and (max-width:280px) {
+
+@media only screen and (min-width: 240px) and (max-width:270px) {
 		
-	.aside {
-		min-height: 200px;
-		background-color:green;	
-		color:white;
-	}
+	
 	
 	section{
 	
-	min-height:2300px;
+	min-height:2050px;
+	
+	}
+
+}
+@media only screen and (min-width: 220px) and (max-width:240px) {
+		
+	
+	
+	section{
+	
+	min-height:2250px;
+	
+	}
+
+}
+@media only screen and (min-width: 200px) and (max-width:220px) {
+		
+	
+	
+	section{
+	
+	min-height:2350px;
+	
+	}
+
+}
+@media only screen and (min-width: 180px) and (max-width:200px) {
+		
+	
+	
+	section{
+	
+	min-height:2450px;
+	
+	}
+
+}
+@media only screen and (min-width: 0px) and (max-width:180px) {
+		
+	
+	
+	section{
+	
+	min-height:2650px;
 	
 	}
 
