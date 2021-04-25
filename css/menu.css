@@ -15,6 +15,7 @@ nav ul li {
 	line-height:15px;
 	border-right:2px solid white;
 	padding-right:30px;
+
 }
 
 .list-menu{
@@ -24,3 +25,12 @@ nav ul li {
 
 }
 
+@media (max-width: 975px){
+
+nav ul li {
+	line-height:15px;
+	border-right:2px solid white;
+	padding-right:30px;
+	margin-top:20px;
+}
+}
