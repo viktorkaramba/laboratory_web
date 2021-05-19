@@ -42,11 +42,9 @@ function table(){
 const table_ = table();
 
 function Reload_Product(){
-    clearTimeout(timerId1);
     for(let z = 0; z<table_.rows.length; z++){
         if(z==0){
             let td = table_.rows[z].cells[3];
-          
             let buttext = document.createTextNode("Prices");
             td.innerHTML = buttext.textContent;
             td.className = "align-middle";
