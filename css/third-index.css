@@ -1,7 +1,7 @@
 /*Main block for middle chapter*/
 .section3{
 	width:100%;
-	height:785px;
+	max-height: 100%;
 }
 
 /*Style for h5*/
@@ -18,6 +18,7 @@
 /*Style for location of map*/
 .location{
 	margin-top:40px;
+	margin-bottom:40px;
 	background-color:green;
 	border-radius:10px;
 	border:3px solid #00e600;
@@ -35,7 +36,7 @@
 	font-weight:bolder;
 }
 
-@media (max-width: 800px){
+/* @media (max-width: 800px){
 	.section3{
 		width:100%;
 		min-height:785px;
@@ -49,5 +50,5 @@
 		min-height:1000px;
 	}
 	
- }
+ } */
  

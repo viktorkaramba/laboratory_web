@@ -9,8 +9,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  </script>
   <link rel = "stylesheet" type = "text/css" href = "css/main.css"/>
-<link rel = "stylesheet" type = "text/css" href = "css/main-page.css"/>
 <link rel = "stylesheet" type = "text/css" href = "css/second-index.css"/>
 <link rel = "stylesheet" type = "text/css" href = "css/menu.css"/>
 </head>
@@ -58,7 +60,6 @@
 				  </ul>
 			</div>
 		</div>
-	
 </div>
 </div>
 </nav >
@@ -70,90 +71,194 @@
 	</div>
 </div>
 <section class="section2">
-	<div class="container-fluid h-100 d-inline-block">
-		<div class="row h-100">
-			<div class="mx-auto h-100" style="background-color:white; width:980px;">
+	<div class="container-fluid d-inline-block">
+		<div class="row ">
+			<div class="mx-auto " style="background-color:white; width:980px;">
 					<div class="container-fluid" style="padding:0px">
-					<h2 style="padding:10px">Price list</h2>
-					<h5 style="padding:10px">Here you can find prices of balls, bags, pumps or nets</h5>
-					<div class="row text-center">
-					<div class="col-md-12 col-lg-3">
-						<button class="btn w-100 btn-secondary btn-outline-dark button_">Balls</button>
+						<div  class="row" >	
+							<div class="col-7 col-xs-9 col-sm-9 col-md-10 col-lg-10">
+								<h2 style="padding:10px">Price list</h2>
+							</div>
+							<div  class="col-5 col-xs-3 col-sm-3 col-md-2 col-lg-2">
+								<div id="basket_button" onclick="ShowBasket()" class="row mr-1 mt-1 basket_block">
+									<div class="col-12">
+										<i class="bi bi-cart4 icon_basket"><p class="text_basket">Basket</p></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<h5 style="padding:10px">Here you can find prices of balls, bags, pumps or nets (Attention sales are coming!!!)</h5>
+						<div class="row text-center">
+							<div class="col-md-12 col-lg-3">
+								<button class="btn w-100 btn-secondary btn-outline-dark button_" onclick="Table_Balls()">Balls</button>
+							</div>
+							<div class="col-md-12 col-lg-3">
+								<button class="btn w-100 btn-secondary btn-outline-dark button_" onclick="Table_Bags()">Bags</button>
+							</div>
+							<div class="col-md-12 col-lg-3">
+								<button class="btn w-100 btn-secondary btn-outline-dark button_" onclick="Table_Pumps()">Pumps</button>
+							</div>
+							<div class="col-md-12 col-lg-3">
+								<button class="btn w-100 btn-secondary btn-outline-dark button_" onclick="Table_Nets()">Nets</button>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-12 col-lg-3">
-						<button class="btn w-100 btn-secondary btn-outline-dark button_">Bags</button>
+					<div id="basket" class="basket price_tabel">
+						<h1>Basket</h1>
+						<hr>
+						<table id="table_basket" class="table table-striped text-center">
+							<tr>
+								<th></th>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Prices</th>
+								<th></th>
+								
+							</tr>
+						</table>
+						<div>
+							<button class="btn btn-secondary btn-outline-dark button_ float-left w-25">Buy</button>	
+							<button class="btn btn-secondary btn-outline-dark button_ float-left w-25" onclick="CloseBasket()">Close</button>	
+							<p id="sum" class="float-right mr-5 sum_block"><b>Sum : </b></p>
+						</div>
 					</div>
-					<div class="col-md-12 col-lg-3">
-						<button class="btn w-100 btn-secondary btn-outline-dark button_">Pumps</button>
-					</div>
-					<div class="col-md-12 col-lg-3">
-						<button class="btn w-100 btn-secondary btn-outline-dark button_">Nets</button>
-					</div>
-					</div>
-					</div>
-					<table class="table table-striped text-center">
+				
+					<div id = "balls" class = "price_tabel">
+					<table id = "balls_table" class="table table-striped text-center">
 						<tr>
 							<th></th>
 							<th>ID</th>
 							<th>Name</th>
 							<th>Prices</th>
+							<th></th>
+							
 						</tr>
-						<tr>
-							<td ><img src = "img/UCL-19.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-1">
+							<td class="align-middle"><img src = "img/UCL-19.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 001 </td>
 							<td class="align-middle"> UCL-2019 </td>
 							<td class="align-middle"> 100$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_" data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/Tango.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-2">
+							<td class="align-middle"><img src = "img/Tango.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 002 </td>
 							<td class="align-middle"> Tango </td>
 							<td class="align-middle"> 300$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/WC-18.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-3">
+							<td class="align-middle"><img src = "img/WC-18.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 003 </td>
 							<td class="align-middle"> WC - 2018 </td>
 							<td class="align-middle"> 150$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/Pl-2021.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-4">
+							<td class="align-middle"><img src = "img/Pl-2021.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 004 </td>
 							<td class="align-middle"> PL - 2021 </td>
 							<td class="align-middle"> 100$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/Nike.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-5">
+							<td class="align-middle"><img src = "img/Nike.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 005 </td>
 							<td class="align-middle"> Nike </td>
 							<td class="align-middle"> 50$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/Select.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-6">
+							<td class="align-middle"><img src = "img/Select.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 006 </td>
 							<td class="align-middle"> Select </td>
 							<td class="align-middle"> 25$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/Brazuka.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
+						<tr id = "tr_-7">
+							<td class="align-middle"><img src = "img/Brazuka.jpg" title = "soccerballs.com" alt = "soccerballs.com"></td>
 							<td class="align-middle"> 007 </td>
 							<td class="align-middle"> Brazuka </td>
 							<td class="align-middle"> 200$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
 			
-						<tr>
-							<td ><img src = "img/UCL-2020.jpg" title = "soccerballs.com" alt = "soccerballs.com">
+						<tr id = "tr_-8">
+							<td class="align-middle"><img src = "img/UCL-2020.jpg" title = "soccerballs.com" alt = "soccerballs.com">
 							<td class="align-middle"> 009 </td>
 							<td class="align-middle"> UCL - 2020 </td>
 							<td class="align-middle"> 150$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
 						</tr>
-						<tr>
-							<td ><img src = "img/La-Liga.jpg" title = "soccerballs.com" alt = "soccerballs.com">
+						<tr id = "tr_-9">
+							<td class="align-middle"><img src = "img/La-Liga.jpg" title = "soccerballs.com" alt = "soccerballs.com">
 							<td class="align-middle"> 010 </td>
 							<td class="align-middle"> LaLiga - 2019 </td>
 							<td class="align-middle"> 200$ </td>
+							<td class="align-middle"><button class="btn btn-secondary btn-outline-dark button_"  data-action="add">Add to basket</button></td>
+						</tr>
+						
+				</table>
+				</div>		
+				<div id = "bags" class = "price_tabel">				
+				<table  class="table table-striped text-center">
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Prices</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td ></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+						</tr>
+						
+				</table>	
+				</div>
+				<div id = "pumps" class = "price_tabel">			
+				<table  class="table table-striped text-center">
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Prices</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td ></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+						</tr>
+						
+				</table>	
+				</div>
+				<div id = "nets" class = "price_tabel">		
+				<table  class="table table-striped text-center">
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Prices</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td ></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
+							<td class="align-middle"></td>
 						</tr>
 				</table>	
+				</div>
+				<script src="js/price_list.js"></script>
+				<script src="js/sales.js"></script>
 			</div>
 		</div>
 	</div>
@@ -174,7 +279,7 @@
 		</div>
 		<div class = "col-6 col-xs-4 col-sm-4 col-md-4 col-lg-4">
 			<ul style="list-style:none">
-				<li><a href = " ">Home</a></li>
+				<li><a href = "index.html">Home</a></li>
 				<li><a href = " ">Catalog</a></li>
 				<li><a href = " ">Delivery and payment</a></li>
 				<li><a href = "Price_list.html">Price list</a></li>
