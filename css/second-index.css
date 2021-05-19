@@ -58,7 +58,7 @@ td img{
 	background-color: rgb(150, 150, 150);
 	border: 2px solid black;
 	border-radius: 10px;
-	margin-right: 5px;
+	margin-right: 0px;
 }
 
 @media (max-width: 438px){

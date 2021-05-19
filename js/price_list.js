@@ -129,11 +129,11 @@ function Remove_product(r){
 			console.log(checkbox_);
 			sum_ -=  parseInt(su);
 			let s = document.getElementById('sum');
-			s.innerHTML= "Sum : " + parseInt(sum_);
+			s.innerHTML= "Sum : " + parseInt(sum_)+"$";
 		}
 		else{
 			let s = document.getElementById('sum');
-			s.innerHTML= "Sum : " + parseInt(sum_);
+			s.innerHTML= "Sum : " + parseInt(sum_)+"$";
 		}
 	}
 	let target = r.parentNode.parentNode.rowIndex;
@@ -142,7 +142,7 @@ function Remove_product(r){
 
 function ShowBasket(){
 	let s = document.getElementById('sum');
-	s.innerHTML= "Sum : " + parseInt(0);
+	s.innerHTML= "Sum : " + parseInt(0)+"$";
 	const products = Array.from(document.getElementsByClassName("price_tabel"))
 	const id = "basket";
 	products.forEach(element => {
@@ -167,7 +167,7 @@ function checkBox_is_checked(r){
 		console.log(checkbox_);
 		sum_ +=  parseInt(su);
 		let s = document.getElementById('sum');
-		s.innerHTML= "Sum : " + parseInt(sum_);
+		s.innerHTML= "Sum : " + parseInt(sum_)+"$";
 	  } 
 	  else if(r.checked == false){
 		let tr_ = r.parentNode.parentNode;
@@ -185,7 +185,7 @@ function checkBox_is_checked(r){
 		console.log(checkbox_);
 		sum_ -=  parseInt(su);
 		let s = document.getElementById('sum');
-		s.innerHTML= "Sum : " + parseInt(sum_);
+		s.innerHTML= "Sum : " + parseInt(sum_) +"$";
 	  }	
 }
 

@@ -94,8 +94,6 @@ function SetSales(a){
              }
         }
     }  
-   
-    
 }
 
 
