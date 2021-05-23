@@ -124,7 +124,7 @@ function Remove_product(r){
 				checkbox_.shift();
 			}
 			else{
-				checkbox_.splice(i,i);
+				checkbox_.splice(i,1);
 			}
 			console.log(checkbox_);
 			sum_ -=  parseInt(su);
@@ -178,7 +178,7 @@ function checkBox_is_checked(r){
 					checkbox_.shift();
 				}
 				else{
-					checkbox_.splice(i,i);
+					checkbox_.splice(i,1);
 				}
 			}
 		}
